@@ -1,0 +1,62 @@
+body{
+    margin: 20px;
+    height: 200px;
+    width: 360px;
+    font-family: 'Special Elite', sans-serif;
+    background: white;
+}
+
+input[type=text]{
+    width:100%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  
+  input[type=text]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }
+
+  ul {
+    list-style: none;
+  
+    padding-inline-start: 0px
+  }
+  ul li::before {
+    content: "";
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif);
+    background-size: contain;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: 0.1rem;
+ 
+  }
+  
+  /* 
+  You can't control the size with list-style-image
+  
+  ul.list-style {
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif);
+  }
+  */
+  
+  
+  /* 
+  If you use the image directly as pseudo element, you can't size it:
+  
+  ul li::before {
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  /
+
+  

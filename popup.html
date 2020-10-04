@@ -1,0 +1,27 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>SAP Note Launcher</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <h1>Jump to SAP Note</h1>
+    
+
+    <hr>
+    <div class="inputbox">
+    
+      <p><input type="text" class="urlinput"></p>
+      <button hidden="true" class="urlbutton">Save</button>
+    </div>
+    <span id="visitedUrls"  class="message"></span>
+
+  </body>
+</html>

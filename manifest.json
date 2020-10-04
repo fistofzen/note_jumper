@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "rfrshr",
+  "description": "SAP Note Executor",
+  "version": "1.1",
+
+  "browser_action": {
+    "default_icon": "sap.png",
+    "default_popup": "popup.html",
+    "default_title": "Click to reload url"
+  },
+
+  "permissions": [
+          "tabs","storage"
+        ],
+  "background": { 
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "commands": {
+         "refresh_url": {
+           "suggested_key": {
+             "default": "Alt+R",
+             "mac": "Alt+R"
+           },
+           "description": "Refresh the defined url"
+         }
+  }
+}
