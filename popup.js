@@ -3,12 +3,7 @@ function message(val) {
 }
 
 function isNumber(n) { return /^-?[\d.]+(?:e-?\d+)?$/.test(n); } 
-
-
-
-var _visitedUrls = _visitedUrls || [];
-if(_visitedUrls.length>3) {
-
+function clearHistory() {
 
   chrome.storage.local.clear(function() {
     var error = chrome.runtime.lastError;
@@ -16,8 +11,12 @@ if(_visitedUrls.length>3) {
         console.error(error);
     }
   });
+  
+}
 
-}   
+
+var _visitedUrls = _visitedUrls || [];
+ 
 chrome.storage.local.get("definedURL", function (result) {
    
   if (result.definedURL != undefined) {
@@ -32,6 +31,7 @@ _gaq.push(['_trackPageview']);
 
 
 $(document).ready(function () {
+  
   //set input to previously saved value
   chrome.storage.local.get("definedURL", function (result) {
    JSON.stringify(result);
@@ -53,7 +53,7 @@ $(document).ready(function () {
 
       $(".urlinput").attr("placeholder", result.definedURL[0].url);
     } else {
-      $(".urlinput").attr("placeholder", "type url here...");
+      $(".urlinput").attr("placeholder", "type note number or text here...");
     }
   });
 
@@ -68,7 +68,7 @@ $(document).ready(function () {
       urls = { url:'https://launchpad.support.sap.com/#/notes/' + userEnteredText, no:userEnteredText};
     }else{
       userEnteredText = decodeURIComponent(decodeURIComponent(decodeURIComponent(userEnteredText)));
-      urls = { url:'https://launchpad.support.sap.com/#/solutions/notesv2/?q=' + userEnteredText +'&sortBy=score&sortOrder=desc'};
+      urls = { url:'https://launchpad.support.sap.com/#/solutions/notesv2/?q=' + userEnteredText +'&sortBy=score&sortOrder=desc', no:userEnteredText};
     }
     
     if(_visitedUrls.length > 5){
@@ -90,3 +90,4 @@ $(document).ready(function () {
     }
   });
 });
+

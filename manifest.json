@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "rfrshr",
+  "name": "SAP Note Quick Open",
   "description": "SAP Note Executor",
   "version": "1.1",
 
@@ -10,9 +10,11 @@
     "default_popup": "popup.html",
     "default_title": "Click to reload url"
   },
-
+  "icons": {
+    "16": "sap.png"
+  },
   "permissions": [
-          "tabs","storage"
+          "storage", "contextMenus"
         ],
   "background": { 
     "scripts": ["background.js"],

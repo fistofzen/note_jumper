@@ -29,7 +29,7 @@ input[type=text]{
   }
   ul li::before {
     content: "";
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif);
+    background-image: url(sap.png);
     background-size: contain;
     display: inline-block;
     width: 1em;
@@ -38,25 +38,5 @@ input[type=text]{
     top: 0.1rem;
  
   }
-  
-  /* 
-  You can't control the size with list-style-image
-  
-  ul.list-style {
-    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif);
-  }
-  */
-  
-  
-  /* 
-  If you use the image directly as pseudo element, you can't size it:
-  
-  ul li::before {
-    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif);
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-  }
-  /
-
-  
+ 
+ 
