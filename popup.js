@@ -13,8 +13,6 @@ function clearHistory() {
   });
   
 }
-
-
 var _visitedUrls = _visitedUrls || [];
  
 chrome.storage.local.get("definedURL", function (result) {
