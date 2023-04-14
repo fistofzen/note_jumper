@@ -69,7 +69,7 @@ $(document).ready(function () {
       urls = { url:'https://launchpad.support.sap.com/#/solutions/notesv2/?q=' + userEnteredText +'&sortBy=score&sortOrder=desc', no:userEnteredText};
     }
     
-    if(_visitedUrls.length > 5){
+    if(_visitedUrls.length > 35){
       _visitedUrls.pop();
     }
     _visitedUrls.unshift(urls);
