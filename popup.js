@@ -8,7 +8,7 @@ function clearHistory() {
   chrome.storage.local.clear(function() {
     var error = chrome.runtime.lastError;
     if (error) {
-        console.error(error);
+        console.error(error + " x");
     }
   });
   
