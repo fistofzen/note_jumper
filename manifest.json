@@ -5,6 +5,7 @@
   "description": "SAP Note Executor",
   "version": "1.1",
 
+  
   "browser_action": {
     "default_icon": "sap.png",
     "default_popup": "popup.html",
