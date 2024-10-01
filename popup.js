@@ -11,6 +11,7 @@ function clearHistory() {
         console.error(error + " x");
     }
   });
+
   
   
 }
