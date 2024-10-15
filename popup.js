@@ -9,7 +9,7 @@ function clearHistory() {
     var error = chrome.runtime.lastError;
     if (error) {
         console.error(error + " x");
-    }
+    }sss
   });
 
   
