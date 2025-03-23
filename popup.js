@@ -13,6 +13,8 @@ function clearHistory() {
   });
 
   
+
+
   
 }
 var _visitedUrls = _visitedUrls || [];
