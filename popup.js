@@ -11,12 +11,9 @@ function clearHistory() {
         console.error(error + " x");s
     }sss
   });
-
-  
-
-ds
   
 }
+
 var _visitedUrls = _visitedUrls || [];
  
 chrome.storage.local.get("definedURL", function (result) {
