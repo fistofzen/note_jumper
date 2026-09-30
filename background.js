@@ -12,7 +12,7 @@ function onClickHandler(info, tab) {
  
  
   chrome.tabs.create({ url: urls.url });
- 
+ fd 
 
   
 };
